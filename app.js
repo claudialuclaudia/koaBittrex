@@ -1,10 +1,11 @@
+var bittrex = require('node-bittrex-api');
+
 const json = require('koa-json')
 const Koa = require('koa')
 const app = new Koa()
 
 var res = [];
 
-var bittrex = require('node-bittrex-api');
 bittrex.options({
   'apikey' : API_KEY,
   'apisecret' : API_SECRET,
